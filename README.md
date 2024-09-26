@@ -1,8 +1,20 @@
-# React + Vite
+# jsx-sort-props-with-comments-no-autofix
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Describe the bug
 
-Currently, two official plugins are available:
+Autofix does not work if there is a comment between props for rule [`jsx/jsx-sort-props`]([url](https://eslint.style/rules/jsx/jsx-sort-props)).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![CleanShot 2024-09-27 at 01 22 13](https://github.com/user-attachments/assets/11252058-bd90-440f-ad02-7336c87c2d0e)
+
+
+### Reproduction
+
+```sh
+git clone https://github.com/rakleed/jsx-sort-props-with-comments-no-autofix
+npm run install
+npm run lint:fix
+```
+
+### Issue
+
+https://github.com/eslint-stylistic/eslint-stylistic/issues/549
