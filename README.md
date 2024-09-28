@@ -11,6 +11,7 @@ Autofix does not work if there is a comment between props for rule [`@stylistic/
 
 ```sh
 git clone https://github.com/rakleed/jsx-sort-props-with-comments-no-autofix
+cd jsx-sort-props-with-comments-no-autofix
 npm run install
 npm run lint:fix
 ```
